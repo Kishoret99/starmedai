@@ -1,3 +1,22 @@
+# Running in local
+
+## Setup (for first time)
+- Get API key
+- Install nodejs
+- `cp .env.example .env`
+- Install client dependencies
+- `cd client`
+- `yarn install`
+- Install server dependencies
+- from the root folder. `cd server`
+- `python3 -m venv env`
+- `pip3 install -r requirements.txt`
+
+## Starting the app
+- Use vscode launch.json task to start the flask app server.
+- `cd client`
+- `yarn dev`
+
 # DocsMind
 
 DocsMind is an open-source project that allows you to chat with your docs.

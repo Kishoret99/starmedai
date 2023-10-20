@@ -36,8 +36,9 @@ if not os.path.exists(f"logs"):
 
 app = Flask(__name__, static_folder=f"{staticPath}")
 
+#allow all origins
 
-CORS(app)
+CORS(app, resources={r"/*": {"origins": "*"}})
 
 logger = logging.getLogger(__name__)
 file_handler = logging.FileHandler("logs/app.log", encoding="utf-8")
